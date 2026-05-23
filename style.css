@@ -2,10 +2,11 @@
 /*共通部分
 ----------------------------------- */
 html {
-    width: 100%;
+    max-width: 100%;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;}
 img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 a {
     text-decoration: none;
@@ -29,6 +30,7 @@ body {
     font-size: 40px;
     color: #4ae;
 }
+
 /* ヘッダー 
 ---------------------------------- */
 #header {
@@ -55,6 +57,7 @@ body {
     align-items: center;
     gap: 100px;
     font-weight: bold;
+    padding: 0;
 }
 .menu a {
     color: white;
@@ -152,6 +155,9 @@ body {
 hr {
     width: 85%;
     margin-left: 0;
+}
+#profile  li{
+    list-style: none;
 }
 /*ワーク
 ---------------------------------------*/
@@ -271,4 +277,76 @@ textarea {
 .copyright {
     font-size: 16px;
     color: white;
+}
+
+/* 
+   スマートフォン用の設定（画面横幅が767px以下のときに適用）*/
+@media screen and (max-width: 767px) {
+  
+  #header {
+    padding: 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .menu {
+    justify-content: center;
+    padding: 0;
+    gap: 15px;
+  }
+
+  .profile-box {
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+  .profile-left, .profile-right {
+    width: 100%; 
+  }
+  
+  .profile {
+    display: block;
+    margin: 0 auto 20px; 
+    max-width: 250px; 
+  }
+
+  .w-list {
+    flex-direction: column; 
+  }
+  
+  .w-list li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #skill {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .sk-list {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-inner {
+    padding: 0 20px; 
+  }
+  
+  .textarea-name,
+  .textarea-mail,
+  .textarea-request {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px; 
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  
+  .submit {
+    width: 100%;
+    padding: 12px;
+  }
 }
