@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sano Hironobu portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JavaScript/script.js" defer></script>
 </head>
 
 <body>
@@ -30,41 +30,41 @@
                 </div>
                 <div class="profile-right">
                     <div class="about">
+                        <div class="name">
+                            <h2>佐野 宏暢</h2>
+                            <span class="font">Sano Hironobu</span>
+                        </div>
                         <ul class="list">
-                            <div class="name">
-                                <h2>佐野 宏暢</h2>
-                                <span class="font">Sano Hironobu</span>
-                            </div>
-                            <ul>
-                                <li>
-                                    <div class="profile-introduction">生年月日</div> 1994年7月18日
-                                </li>
+                            <li>
+                                <div class="profile-introduction">生年月日</div> 1994年7月18日
                                 <hr>
-                                <li>
-                                    <div class="profile-introduction">出身地</div> 滋賀県
-                                </li>
+                            </li>
+
+                            <li>
+                                <div class="profile-introduction">出身地</div> 滋賀県
                                 <hr>
-                                <li>
-                                    <div class="profile-introduction">血液型</div> O型
-                                </li>
+                            </li>
+                            <li>
+                                <div class="profile-introduction">血液型</div> O型
                                 <hr>
-                                <li>
-                                    <div class="profile-introduction">学歴</div> 大学卒業
-                                </li>
+                            </li>
+                            <li>
+                                <div class="profile-introduction">学歴</div> 大学卒業
                                 <hr>
-                                <li>
-                                    <div class="profile-introduction">趣味</div> サッカー / お笑い / 映画
-                                </li>
+                            </li>
+                            <li>
+                                <div class="profile-introduction">趣味</div> サッカー / お笑い / 映画
                                 <hr>
-                                <li>
-                                    <div class="profile-introduction">資格</div> 普通自動車第一種運転免許 / ITパスポート
-                                </li>
+                            </li>
+                            <li>
+                                <div class="profile-introduction">資格</div> 普通自動車第一種運転免許 / ITパスポート
                                 <hr>
-                            </ul>
-                            <div class="job">
-                                <p>前職ではEC運営業務に携わっておりました。サイト制作等を行う中で、ITに興味を持ち、現在は職業訓練校にてHTML / CSS / JavaScript /
-                                    Javaを中心に学習しております。</p>
-                            </div>
+                            </li>
+                        </ul>
+                        <div class="job">
+                            <p>前職ではEC運営業務に携わっておりました。サイト制作等を行う中で、ITに興味を持ち、現在は職業訓練校にてHTML / CSS / JavaScript /
+                                Javaを中心に学習しております。</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,33 +139,22 @@
                     <h2 class="title">Contact</h2>
                 </div>
                 <br>
-                <form action="" method="post" class="contact-form"></form>
-                お名前
-                <input type="text" name="名前" class="textarea-name">
-                <br>
-                メールアドレス
-                <input type="email" name="メールアドレス" class="textarea-mail">
-                <br>
-                内容
-                <textarea name="依頼内容" class="textarea-request"></textarea>
-                <br>
-                <input type="submit" class="submit" value="送信する">
+                <form action="" method="post" class="contact-form">
+                    <label>お名前</label>
+                    <input type="text" name="名前" class="textarea-name">
+                    <label>メールアドレス</label>
+                    <input type="email" name="メールアドレス" class="textarea-mail">
+                    <label>内容</label>
+                    <textarea name="依頼内容" class="textarea-request"></textarea>
+                    <input type="submit" class="submit" value="送信する">
                 </form>
             </div>
         </section>
     </main>
     <!--フッター-->
-    <footer id=footer>
-        <!-- <div class="footerList">
-        <ul>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#skill">Skill</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul> -->
+    <footer id="footer">
         <div class="copyright">
             &copy;2026 Sano Hironobu - Portfolio
-            <!-- </div> -->
         </div>
     </footer>
 </body>
